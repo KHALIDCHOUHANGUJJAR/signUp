@@ -1,0 +1,43 @@
+body {
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  height: 100%;
+  width: 30%;
+  margin-left: 40%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  /* background-image: url("paper.gif");
+  background: #636060; */
+  background: linear-gradient(to bottom left, #096786 1%, #be4f87 100%);
+  color: whitesmoke;
+  margin-top: 50px;
+  border-radius: 20px;
+  width: 70%;
+  box-shadow: -1px 1px 10px 2px;
+}
+.loader {
+    width: 30px;
+    aspect-ratio: 4;
+    background: radial-gradient(circle closest-side, #edeaea 90%, #eeeaea00) 0/calc(100%/3) 100% space;
+    clip-path: inset(0 100% 0 0);
+    animation: l1 1s steps(4) infinite;
+}
+
+@keyframes l1 {
+    to {
+        clip-path: inset(0 -34% 0 0)
+    }
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+}
